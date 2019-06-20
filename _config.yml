@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # Jekyll configuration
+=======
+theme: jekyll-theme-slate
+name: Aidan Garnish
+>>>>>>> cca406bcf1e4cfe96bee75a42ea42a714e6c98fd
 markdown: kramdown
 highlighter: rouge
 paginate: 100 # it will paginate after this number
