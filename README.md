@@ -1,112 +1,109 @@
-## Jasper2
+# The Slate theme
 
-[![Build Status](https://travis-ci.org/jekyller/jasper2.svg?branch=master)](https://travis-ci.org/jekyller/jasper2)
-[![Ruby](https://img.shields.io/badge/ruby-2.5.1-blue.svg?style=flat)](http://travis-ci.org/jekyller/jasper2)
-[![Jekyll](https://img.shields.io/badge/jekyll-3.7.4-blue.svg?style=flat)](http://travis-ci.org/jekyller/jasper2)
+[![Build Status](https://travis-ci.org/pages-themes/slate.svg?branch=master)](https://travis-ci.org/pages-themes/slate) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-slate.svg)](https://badge.fury.io/rb/jekyll-theme-slate)
 
-This is a full-featured port of Ghost's default theme [Casper](https://github.com/tryghost/casper)
-*v2.1.9* for [Jekyll](https://jekyllrb.com/) / [GitHub Pages](https://pages.github.com/).
+*Slate is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/slate), or even [use it today](#usage).*
 
-## Live Demo
+![Thumbnail of Slate](thumbnail.png)
 
-[Ghost's Casper](https://demo.ghost.io) // [Jasper2](https://jekyller.github.io/jasper2)
+## Usage
 
-![home page](https://raw.githubusercontent.com/jekyller/jasper2/master/assets/screenshot-desktop.jpg)
+To use the Slate theme:
 
+1. Add the following to your site's `_config.yml`:
 
-## Features
+    ```yml
+    theme: jekyll-theme-slate
+    ```
 
-* Out of the box support for multiple authors (via `_data/authors.yml`)
-* Full author information including: picture, bio, website, twitter, facebook, etc.
-* Tag description(s) and personalised covers (via `_data/tags.yml`)
-* Related posts view at the bottom of each post
-* All Ghost default pages: Author page(s), Tag page(s), About page(s), 404, etc.
-* Pagination (infinite scrolling or standard pagination, i.e. posts across multiple pages)
-* Atom Feeds by [Jekyll-feed](https://github.com/jekyll/jekyll-feed)
-* Toggleable subscribe button (requires an external service)
-* Code Syntax Highlight with [highlight.js](https://highlightjs.org/)
-* Support for Google Analytics tracking
-* Support for Disqus comments (not Ghost standard)
+2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
 
+    ```ruby
+    gem "github-pages", group: :jekyll_plugins
+    ```
 
-## Getting Started
+## Customizing
 
-### Deployment
+### Configuration variables
 
-**Important:**  For security reasons, Github does not allow plugins (under `_plugins/`) when
-deploying with Github Pages. This means:
+Slate will respect the following variables, if set in your site's `_config.yml`:
 
-**1)** that we need to generate your site locally (more details below) and push the resulting
-HTML (the contents of `_site/` or `../jasper2-pages/`) to a Github repository, that GitHub Pages
-then host;
-
-**2)** built the site with [travis-ci](https://travis-ci.org/) (with goodies from
-[jekyll-travis](https://github.com/mfenner/jekyll-travis)) automatically pushing the
-generated HTML files to a *gh-pages* branch.
-This later approach is the one I am currently using to generate the live demo.
-
-**3)** deploy the static website with Jekyll-compatible hosters, such as https://www.netlify.com/, that allow for deployment from the Github repo and publish the website using CDNs. Netlify has a free starter offer.
-
-For option **1)** simply clone this repository (*master branch*), and then run
-`bundle exec jekyll serve` inside the directory. Upload the resulting `_site/` (or `../jasper2-pages/`)
-contents to your repository (*master branch* if uploading as your personal page
-(e.g. username.github.io) or *gh-pages branch* if uploading as a project page
-(as for the [demo](https://github.com/jekyller/jasper2/tree/gh-pages)).
-
-For option **2)** you will need to set up travis-ci for your personal fork. Briefly all you
-need then is to change your details in *[\_config.yml](_config.yml)* so that you can push
-to your github repo. You will also need to generate a secure key to add to your
-*[.travis.yml](.travis.yml)* (you can find more info on how to do it in that file).
-Also make sure you read the documentation from
-[jekyll-travis](https://github.com/mfenner/jekyll-travis). This approach has clear
-advantages in that you simply push your file changes to GitHub and all the HTML files
-are generated for you and pushed to *gh-pages*. Also you get to know if everything is
-still fine with your site builds. Don't hesitate to contact me if you still have any
-issues (see below about issue tracking).
-
-### Author Pages
-
-In order to properly generate author pages you need to rename the field *author* in the
-front matter of every post to match that of your each author's *username* as defined
-in the *[\_data/authors.yml](_data/authors.yml)* file.
-With the latest update, multiple author blogs are now supported out of the box.
-
-### Compiling Styles
-
-Following on the way Casper styles are compiled as [described here](https://github.com/tryghost/casper#development):
-
-Jasper2 styles are compiled using Gulp/PostCSS to polyfill future CSS spec. You'll need Node and Gulp installed globally. After that, from the theme's root directory:
-
-```bash
-$ npm install
-$ gulp
+```yml
+title: [The title of your site]
+description: [A short description of your site's purpose]
 ```
 
-Now you can edit `/assets/css/` files, which will be compiled to `/assets/built/` automatically.
+Additionally, you may choose to set the following optional variables:
 
-## Issues and Contributing
+```yml
+show_downloads: ["true" or "false" to indicate whether to provide a download URL]
+google_analytics: [Your Google Analytics tracking ID]
+```
 
-This install builds well with Ruby v2.5.1 and Jekyll v3.7.4. If you run into any problems
-please log them on the [issue tracker](https://github.com/jekyller/jasper2/issues).
+### Stylesheet
 
-Feel free pull-request your patches and fixes.
+If you'd like to add your own custom styles:
 
-## Thanks
+1. Create a file called `/assets/css/style.scss` in your site
+2. Add the following content to the top of the file, exactly as shown:
+    ```scss
+    ---
+    ---
 
+    @import "{{ site.theme }}";
+    ```
+3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
 
-Many thanks to the Ghost team for all the design work. Also many thanks to all contributors,
-that help keeping the project alive and updated :smile:
+*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
 
+### Layouts
 
-## Copyright & License
+If you'd like to change the theme's HTML layout:
 
-Same licence as the one provided by Ghost's team. See Casper's theme [license](GHOST.txt).
+1. [Copy the original template](https://github.com/pages-themes/slate/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
+2. Create a file called `/_layouts/default.html` in your site
+3. Paste the default layout content copied in the first step
+4. Customize the layout as you'd like
 
-Copyright (C) 2015-2018 - Released under the MIT License.
+### Overriding GitHub-generated URLs
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
 
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+1. Look at [the template source](https://github.com/pages-themes/slate/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
+2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
+    ```yml
+    github:
+      zip_url: http://example.com/download.zip
+      another_url: another value
+    ```
+3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
+
+For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
+
+## Roadmap
+
+See the [open issues](https://github.com/pages-themes/slate/issues) for a list of proposed features (and known issues).
+
+## Project philosophy
+
+The Slate theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
+
+## Contributing
+
+Interested in contributing to Slate? We'd love your help. Slate is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+
+### Previewing the theme locally
+
+If you'd like to preview the theme locally (for example, in the process of proposing a change):
+
+1. Clone down the theme's repository (`git clone https://github.com/pages-themes/slate`)
+2. `cd` into the theme's directory
+3. Run `script/bootstrap` to install the necessary dependencies
+4. Run `bundle exec jekyll serve` to start the preview server
+5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+
+### Running tests
+
+The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
