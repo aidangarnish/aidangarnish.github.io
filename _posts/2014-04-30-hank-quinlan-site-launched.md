@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Hank Quinlan, Horrible Cop, Launches Site"
+title: "My first Jekyll post"
 date: 2014-04-30
 ---
 
-#heading 1
+# heading 1
 
 ## heading 2
 
