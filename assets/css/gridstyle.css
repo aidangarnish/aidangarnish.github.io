@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   color:#373737;
   background: #212121;
-  font-size: 16px;
+  font-size: 12px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -102,7 +102,10 @@ body {
               max-width: 100%;
           }
 
-          #project_title, #project_tagline{
+          #project_title{
+            padding: 40px 0 0 380px;
+          }
+          #project_tagline{
             padding: 0 0 0 380px;
           }
       }
