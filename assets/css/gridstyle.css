@@ -126,15 +126,21 @@ body {
               max-width: 100%;
           }
           .box{
-            padding: 10px 250px 10px 250px;
+            padding: 10px 250px 10px 100px;
           }
           img{
             max-width: 400px;
           }
           .gist{
-            max-width: 100%;
+            max-width: 500px;
           }
       }
+      @media only screen and (min-width: 1200px)   {
+       
+        .gist{
+          max-width: 100%;
+        }
+    }
   
   .box {
     font-size: 100%; 
