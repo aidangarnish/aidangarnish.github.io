@@ -95,16 +95,21 @@ body {
         .wrapper {
             grid-gap: 1px;
         }
+        .box{
+          padding: 10px;
+        }
       }
   
       @media only screen and (min-width: 600px)   {
           .wrapper {
               max-width: 100%;
           }
+          .box{
+            padding: 10px 250px 10px 250px;
+          }
       }
   
   .box {
-    padding: 10px 250px 10px 250px;
     font-size: 100%; 
   }
   
