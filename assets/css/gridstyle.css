@@ -102,6 +102,9 @@ body {
               max-width: 100%;
           }
 
+          .header,#project_tagline{
+            padding: 0 0 0 380px;
+          }
       }
   
   .box {
