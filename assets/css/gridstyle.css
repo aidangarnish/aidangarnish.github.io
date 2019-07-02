@@ -69,7 +69,7 @@ body {
   
       .wrapper {
           background-color: #fff;
-          color: #444;
+          color: #fff;
       }
   
     .wrapper {
@@ -95,15 +95,12 @@ body {
       }
   
   .box {
-    background-color: #444;
-    color: #fff;
-    border-radius: 0px;
     padding: 10px;
     font-size: 150%; 
   }
   
   .header,
   .footer {
-    background-color: #999;
+    background-color: #212121;
     height: 180px;
   }
