@@ -21,9 +21,7 @@ Lookup the app you created in step 2 using the clientId and add the following Pe
  <AppPermissionRequests AllowAppOnlyPolicy="true">
     <AppPermissionRequest Scope="http://sharepoint/content/tenant" Right="FullControl" />
     </AppPermissionRequests>
-
 4. Get a client secret from the Azure AD app registration -> Settings -> Keys blade
-
 5. Use Postman to call https://accounts.accesscontrol.windows.net/[yourSharePointTenantId(see step 1)]/tokens/OAuth/2?Content-Type=application/x-www-form-urlencoded. The body requires the following form-data:
 
     grant_type: client_credentials
@@ -31,4 +29,5 @@ Lookup the app you created in step 2 using the clientId and add the following Pe
     client_secret: [App reg secret]
     resource: 00000003-0000-0ff1-ce00-000000000000/[yourSharePointTenantUrl]@[yourTenantId]
 
-![](/assets/images/SharePointToken2.png)6. You now have a token that can be used to call SharePoint API endpoints.
+![](/assets/images/SharePointToken2.png)
+6. You now have a token that can be used to call SharePoint API endpoints.

@@ -14,49 +14,7 @@ This will ensure that group claims are added to the claims object and make them 
 
 Next, create a custom Authorize filter that checks to see if a group id exists in the claims object and denies access if it doesn't.
 
-`public class AuthorizeADAttribute : AuthorizeAttribute
-    {
-        public string GroupId { get; set; }`
-        
-        protected override bool AuthorizeCore(HttpContextBase httpContext)
-        {
-            if (base.AuthorizeCore(httpContext))
-            {
-                if (String.IsNullOrEmpty(GroupId))
-                    return true;
-
-                var identity = (ClaimsPrincipal)Thread.CurrentPrincipal;
-
-                var claim = identity.Claims.Where(c => c.Value == GroupId).FirstOrDefault();
-               
-                if(claim != null)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-
-            }
-            return false;
-        }
-
-        protected override void HandleUnauthorizedRequest(System.Web.Mvc.AuthorizationContext filterContext)
-        {
-            if (!filterContext.HttpContext.User.Identity.IsAuthenticated)
-            {
-                base.HandleUnauthorizedRequest(filterContext);
-            }
-            else
-            {
-                filterContext.Result = new RedirectToRouteResult(
-                new System.Web.Routing.RouteValueDictionary(new { controller = "Home", action = "FailedLogin" }));
-
-                filterContext.Result.ExecuteResult(filterContext.Controller.ControllerContext);
-            }
-        }
-    }
+<script src="https://gist.github.com/aidangarnish/ec87f007d167236a3c3d5ea7001b913e.js"></script>
 
 To use the attribute decorate a controller action as follows replacing the GroupId with the Id of your group:
 
