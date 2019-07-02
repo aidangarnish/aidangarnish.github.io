@@ -102,7 +102,7 @@ body {
           max-width: 250px;
         }
         .gist{
-          max-width: 480px;
+          max-width: 460px;
         }
       }
 
@@ -132,7 +132,7 @@ body {
             max-width: 400px;
           }
           .gist{
-            max-width: 500px;
+            max-width: 100%;
           }
       }
   
