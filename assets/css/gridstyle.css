@@ -2,15 +2,6 @@
 body {
     margin: 0px;
   }
-  
-  .sidebar {
-          grid-area: sidebar;
-      }
-  
-      .sidebar2 {
-          grid-area: sidebar2;
-      }
-  
       .content {
           grid-area: content;
       }
@@ -33,7 +24,6 @@ body {
       grid-gap: 1em;
       grid-template-areas:
        "header"
-       "sidebar"
        "content"
        "footer"
     }
@@ -41,11 +31,6 @@ body {
       @media only screen and (min-width: 500px)  {
         .wrapper {
             grid-gap: 1px;
-            grid-template-columns: 20% auto;
-            grid-template-areas:
-            "header   header"
-            "sidebar  content"
-            "footer   footer";
         }
 
         .sidebar2{display: none;}
@@ -53,16 +38,9 @@ body {
   
       @media only screen and (min-width: 600px)   {
           .wrapper {
-            grid-gap: 1px;
-              grid-template-columns: 120px auto 120px;
-              grid-template-areas:
-        "header  header  header"
-              "sidebar content sidebar2"
-              "footer  footer  footer";
               max-width: 100%;
           }
 
-          .sidebar2{display: inline;}
       }
   
   .box {
@@ -77,9 +55,4 @@ body {
   .footer {
     background-color: #999;
     height: 180px;
-  }
-  
-  .sidebar2 {
-    background-color: #ccc;
-    color: #444;
   }
