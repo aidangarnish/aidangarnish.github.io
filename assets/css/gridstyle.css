@@ -120,6 +120,7 @@ body {
         .gist{
           max-width: 460px;
         }
+        #project_tagline {display: inline;}
       }
 
       @media only screen and (min-width: 700px)  {
