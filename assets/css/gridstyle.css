@@ -102,8 +102,20 @@ body {
           max-width: 250px;
         }
       }
+
+      @media only screen and (min-width: 700px)  {
+        .wrapper {
+            grid-gap: 1px;
+        }
+        .box{
+          padding: 10px 100px 10px 100px;
+        }
+        img{
+          max-width: 250px;
+        }
+      }
   
-      @media only screen and (min-width: 700px)   {
+      @media only screen and (min-width: 800px)   {
           .wrapper {
               max-width: 100%;
           }
