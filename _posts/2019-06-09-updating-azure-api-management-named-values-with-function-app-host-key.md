@@ -8,6 +8,8 @@ When using Azure APIM with Azure Functions it is necessary for APIM to be aware 
 
 To do this I have written an Azure Powershell script that gets the function host key and then writes it to the APIM named value. The script looks like this:
 
+https://github.com/aidangarnish/aidangarnish.github.io/blob/700ac24d713dd59e5f9c937c3467762204575cbc/assets/code/update-named-values-with-function-app-host-key.ps1#L1
+
 ~~~
 Param([string]$namedValueId)
 $functionName = $Env:SiteName;
