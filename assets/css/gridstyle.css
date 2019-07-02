@@ -101,7 +101,7 @@ body {
       img{
         max-width: 220px;
       }
-      .gist, ol{
+      .gist, ol, iframe{
         max-width: 290px;
       }
       #project_tagline {display: none;}
@@ -117,7 +117,7 @@ body {
         img{
           max-width: 250px;
         }
-        .gist, ol{
+        .gist, ol, iframe{
           max-width: 460px;
         }
         #project_tagline {display: inline;}
@@ -133,7 +133,7 @@ body {
         img{
           max-width: 250px;
         }
-        .gist, ol{
+        .gist, ol, iframe{
           max-width: 500px;
         }
       }
@@ -148,7 +148,7 @@ body {
           img{
             max-width: 400px;
           }
-          .gist, ol{
+          .gist, ol, iframe{
             max-width: 500px;
           }
       }
@@ -157,7 +157,7 @@ body {
         img{
           max-width: 800px;
         }
-        .gist, ol{
+        .gist, ol, iframe{
           max-width: 100%;
         }
     }
