@@ -21,6 +21,16 @@ h1 {
   font-weight: 700;
 }
 
+h1 a{
+  color:#fff;
+  text-decoration: none;
+}
+
+h1 a:hover{
+  color:#bfb7b7;
+  text-decoration: none;
+}
+
 h2 {
   padding-bottom: 10px;
   font-size: 32px;
