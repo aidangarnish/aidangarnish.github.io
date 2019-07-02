@@ -98,6 +98,9 @@ body {
         .box{
           padding: 10px;
         }
+        img{
+          max-width: 250px;
+        }
       }
   
       @media only screen and (min-width: 600px)   {
@@ -106,6 +109,9 @@ body {
           }
           .box{
             padding: 10px 250px 10px 250px;
+          }
+          img{
+            max-width: 400px;
           }
       }
   
