@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: grid
 title: "Aidan's first post"
 date: 2019-06-20
 ---
