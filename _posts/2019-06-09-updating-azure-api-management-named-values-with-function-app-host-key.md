@@ -8,7 +8,8 @@ When using Azure APIM with Azure Functions it is necessary for APIM to be aware 
 
 To do this I have written an Azure Powershell script that gets the function host key and then writes it to the APIM named value. The script looks like this:
 
-/* Param([string]$namedValueId)
+~~~
+Param([string]$namedValueId)
 $functionName = $Env:SiteName;
 $resourceGroup = $Env:APPRESOURCEGROUP;
 $apimServiceName = $Env:APIM_SERVICENAME;
@@ -19,7 +20,8 @@ $accessToken = Invoke-RestMethod -Uri "https://$functionName.scm.azurewebsites.n
 $response = Invoke-RestMethod -Method GET -Headers @{Authorization = ("Bearer {0}" -f $accessToken)} -ContentType "application/json" -Uri "https://$functionName.azurewebsites.net/admin/host/keys/default"
 
 $apimContext = New-AzureRMApiManagementContext -ResourceGroupName $resourceGroup -ServiceName $apimServiceName
-Set-AzureRmApiManagementProperty -Context $apimContext -PropertyId $namedValueId -Value $response.value -PassThru */
+Set-AzureRmApiManagementProperty -Context $apimContext -PropertyId $namedValueId -Value $response.value -PassThru 
+~~~
 
 This script is stored in an Azure DevOps repo and referenced in the Azure Powershell task:
 
