@@ -1,3 +1,9 @@
+---
+layout: grid
+title: "Obtain Sharepoint API token using REST"
+date: 2019-04-09
+---
+
 1. Find your SharePoint tenant id using https://login.microsoftonline.com/{yourTenantName}/.well-known/openid-configuration. 
 YourTenantName is usually something like yourCompanyName.onmicrosoft.com. The tenant Id will be returned in the JSON response just after "https://login.microsoftonline.com/".
 

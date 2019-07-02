@@ -1,3 +1,9 @@
+---
+layout: grid
+title: "Authorize ASP.Net MVC controller actions with Azure AD group"
+date: 2017-11-04
+---
+
 To use Azure AD groups to secure an ASP.Net MVC app is relatively straight forward but needs a little bit of configuration setup. 
 
 In the Azure Portal navigate to your App registration, open the Manifest and update the following setting.
