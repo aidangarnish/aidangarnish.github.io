@@ -101,6 +101,9 @@ body {
         img{
           max-width: 250px;
         }
+        .gist{
+          max-width: 480px;
+        }
       }
 
       @media only screen and (min-width: 700px)  {
@@ -113,9 +116,12 @@ body {
         img{
           max-width: 250px;
         }
+        .gist{
+          max-width: 500px;
+        }
       }
   
-      @media only screen and (min-width: 800px)   {
+      @media only screen and (min-width: 900px)   {
           .wrapper {
               max-width: 100%;
           }
@@ -124,6 +130,9 @@ body {
           }
           img{
             max-width: 400px;
+          }
+          .gist{
+            max-width: 500px;
           }
       }
   
