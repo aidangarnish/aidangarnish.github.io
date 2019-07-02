@@ -91,6 +91,21 @@ body {
        "footer"
     }
   
+    @media only screen and (min-width: 300px)  {
+      .wrapper {
+          grid-gap: 1px;
+      }
+      .box{
+        padding: 10px;
+      }
+      img{
+        max-width: 220px;
+      }
+      .gist{
+        max-width: 2460px;
+      }
+    }
+
       @media only screen and (min-width: 500px)  {
         .wrapper {
             grid-gap: 1px;
