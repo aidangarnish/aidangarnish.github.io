@@ -1,6 +1,6 @@
 ---
 layout: grid
-title: "Authorize ASP.Net MVC controller actions with Azure AD group"
+title: Authorize ASP.Net MVC controller actions with Azure AD group
 date: 2017-11-04
 ---
 

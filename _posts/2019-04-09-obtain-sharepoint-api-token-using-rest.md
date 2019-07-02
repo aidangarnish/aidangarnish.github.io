@@ -1,6 +1,6 @@
 ---
 layout: grid
-title: "Obtain Sharepoint API token using REST"
+title: Obtain Sharepoint API token using REST
 date: 2019-04-09
 ---
 

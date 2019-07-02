@@ -1,6 +1,6 @@
 ---
 layout: grid
-title: "My first time-lapse video"
+title: My first time-lapse video
 date: 2015-01-14
 ---
 

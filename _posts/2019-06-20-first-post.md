@@ -1,6 +1,6 @@
 ---
 layout: grid
-title: "First post"
+title: First post
 date: 2019-06-20
 ---
 

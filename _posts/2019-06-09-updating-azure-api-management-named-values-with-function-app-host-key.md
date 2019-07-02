@@ -1,6 +1,6 @@
 ---
 layout: grid
-title: "Updating Azure API Management named values with function app host key"
+title: Updating Azure API Management named values with function app host key
 date: 2019-06-09
 ---
 

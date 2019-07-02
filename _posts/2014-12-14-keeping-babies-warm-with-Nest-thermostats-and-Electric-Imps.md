@@ -1,6 +1,6 @@
 ---
 layout: grid
-title: "Keeping babies warm with Nest thermostats and Electric Imps"
+title: Keeping babies warm with Nest thermostats and Electric Imps
 date: 2014-12-14
 ---
 

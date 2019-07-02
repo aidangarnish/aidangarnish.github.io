@@ -1,6 +1,6 @@
 ---
 layout: grid
-title: "24 hour time-lapse video"
+title: 24 hour time-lapse video
 date: 2015-01-15
 ---
 
