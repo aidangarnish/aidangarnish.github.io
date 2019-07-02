@@ -137,6 +137,9 @@ body {
       }
       @media only screen and (min-width: 1200px)   {
        
+        img{
+          max-width: 800px;
+        }
         .gist{
           max-width: 100%;
         }
