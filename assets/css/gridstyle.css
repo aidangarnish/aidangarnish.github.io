@@ -111,10 +111,7 @@ body {
       @media only screen and (min-width: 500px)  {
         .wrapper {
             grid-gap: 1px;
-        }
-        .box{
-          padding: 10px;
-        }
+        }     
         img{
           max-width: 250px;
         }
@@ -127,9 +124,6 @@ body {
       @media only screen and (min-width: 700px)  {
         .wrapper {
             grid-gap: 1px;
-        }
-        .box{
-          padding: 10px 100px 10px 100px;
         }
         img{
           max-width: 250px;
@@ -192,10 +186,14 @@ img{
   margin: 10px 0px 10px 30px;
 }
 
-  #project_tagline {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 300;
-    background: none;
-    text-shadow: #111 0px 0px 10px;
-  }
+#project_tagline {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  background: none;
+  text-shadow: #111 0px 0px 10px;
+}
+
+#project_title, #project_tagline{
+  text-align: center;
+}
