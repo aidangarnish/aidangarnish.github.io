@@ -100,12 +100,15 @@ body {
         padding: 10px;
       }
       img{
-        max-width: 325px;
+        max-width: 315px;
       }
       .gist, ol, iframe{
         max-width: 325px;
       }
       #project_tagline {display: none;}
+      #project_title{
+        text-align: left;
+      }
     }
 
       @media only screen and (min-width: 500px)  {
