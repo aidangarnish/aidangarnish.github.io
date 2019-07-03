@@ -100,10 +100,10 @@ body {
         padding: 10px;
       }
       img{
-        max-width: 220px;
+        max-width: 325px;
       }
       .gist, ol, iframe{
-        max-width: 290px;
+        max-width: 325px;
       }
       #project_tagline {display: none;}
     }
