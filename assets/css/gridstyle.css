@@ -131,13 +131,13 @@ img{
   }
   h1{line-height: 1.1em;}
   .box{
-    width: 95%;
+    width: 310px;
   }
   img{
-    max-width:95%;
+    max-width:310px;
   }
   .gist, ol, iframe{
-    max-width: 95%;
+    max-width: 310px;
   }
   #project_tagline {display: none;}
   
@@ -148,7 +148,7 @@ img{
         grid-gap: 1px;
     }     
     img{
-      max-width: 250px;
+      max-width: 300px;
     }
     .gist, ol, iframe{
       max-width: 460px;
