@@ -91,73 +91,7 @@ body {
        "footer"
     }
   
-    @media only screen and (min-width: 350px)  {
-      .wrapper {
-          grid-gap: 1px;
-      }
-      h1{line-height: 1.1em;}
-      .box{
-        padding: 10px;
-      }
-      img{
-        max-width: 315px;
-      }
-      .gist, ol, iframe{
-        max-width: 325px;
-      }
-      #project_tagline {display: none;}
-      
-    }
-
-      @media only screen and (min-width: 500px)  {
-        .wrapper {
-            grid-gap: 1px;
-        }     
-        img{
-          max-width: 250px;
-        }
-        .gist, ol, iframe{
-          max-width: 460px;
-        }
-        #project_tagline {display: block;}
-      }
-
-      @media only screen and (min-width: 700px)  {
-        .wrapper {
-            grid-gap: 1px;
-        }
-        img{
-          max-width: 250px;
-        }
-        .gist, ol, iframe{
-          max-width: 500px;
-        }
-        
-      }
-  
-      @media only screen and (min-width: 900px)   {
-          .wrapper {
-              max-width: 100%;
-          }
-          .box{
-            padding: 10px 250px 10px 100px;
-          }
-          img{
-            max-width: 400px;
-          }
-          .gist, ol, iframe{
-            max-width: 500px;
-          }
-      }
-      @media only screen and (min-width: 1200px)   {
-       
-        img{
-          max-width: 800px;
-        }
-        .gist, ol, iframe{
-          max-width: 100%;
-        }
-    }
+    
   
   .box {
     font-size: 100%; 
@@ -197,6 +131,74 @@ img{
   font-weight: 300;
   background: none;
   text-shadow: #111 0px 0px 10px;
+}
+
+@media only screen and (min-width: 350px)  {
+  .wrapper {
+      grid-gap: 1px;
+  }
+  h1{line-height: 1.1em;}
+  .box{
+    width: 95%;
+  }
+  img{
+    max-width:95%;
+  }
+  .gist, ol, iframe{
+    max-width: 95%;
+  }
+  #project_tagline {display: none;}
+  
+}
+
+  @media only screen and (min-width: 500px)  {
+    .wrapper {
+        grid-gap: 1px;
+    }     
+    img{
+      max-width: 250px;
+    }
+    .gist, ol, iframe{
+      max-width: 460px;
+    }
+    #project_tagline {display: block;}
+  }
+
+  @media only screen and (min-width: 700px)  {
+    .wrapper {
+        grid-gap: 1px;
+    }
+    img{
+      max-width: 250px;
+    }
+    .gist, ol, iframe{
+      max-width: 500px;
+    }
+    
+  }
+
+  @media only screen and (min-width: 900px)   {
+      .wrapper {
+          max-width: 100%;
+      }
+      .box{
+        padding: 10px 250px 10px 100px;
+      }
+      img{
+        max-width: 400px;
+      }
+      .gist, ol, iframe{
+        max-width: 500px;
+      }
+  }
+  @media only screen and (min-width: 1200px)   {
+   
+    img{
+      max-width: 800px;
+    }
+    .gist, ol, iframe{
+      max-width: 100%;
+    }
 }
 
 
