@@ -106,9 +106,7 @@ body {
         max-width: 325px;
       }
       #project_tagline {display: none;}
-      #project_title{
-        text-align: left;
-      }
+      
     }
 
       @media only screen and (min-width: 500px)  {
@@ -134,9 +132,7 @@ body {
         .gist, ol, iframe{
           max-width: 500px;
         }
-        #project_title, #project_tagline{
-          text-align: center;
-        }
+        
       }
   
       @media only screen and (min-width: 900px)   {
@@ -165,7 +161,9 @@ body {
   
   .box {
     font-size: 100%; 
-    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
   }
   
   .header,
