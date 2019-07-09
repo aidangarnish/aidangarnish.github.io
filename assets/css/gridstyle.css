@@ -131,7 +131,8 @@ img{
   }
   h1{line-height: 1.1em;}
   .box{
-    width: 310px;
+    width: 330px;
+    padding: 10px;
   }
   img{
     max-width:310px;
