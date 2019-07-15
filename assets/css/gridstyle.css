@@ -150,9 +150,6 @@ ul{padding: 0px}
     .wrapper {
         grid-gap: 1px;
     }     
-    img{
-      max-width: 300px;
-    }
     .gist, ol, iframe{
       max-width: 460px;
     }
@@ -162,9 +159,6 @@ ul{padding: 0px}
   @media only screen and (min-width: 700px)  {
     .wrapper {
         grid-gap: 1px;
-    }
-    img{
-      max-width: 250px;
     }
     .gist, ol, iframe{
       max-width: 500px;
