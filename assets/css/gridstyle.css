@@ -134,7 +134,7 @@ ul{padding: 0px}
   h1{line-height: 1.1em;}
   .box{
     width: 330px;
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
   }
   img{
     max-width:310px;
