@@ -12,7 +12,7 @@ However, using the Object Id that is displayed on the overview page of the app r
 
 "Principals of type Application cannot validly be used in role assignments."
 
-The solution is to call the following:
+The solution is to first call the following:
 
 az ad sp show --id [Application (client) Id]
 
